@@ -1,1 +1,1 @@
-(new-object net.webclient).DownloadString("http://raw.github.com/ChrisQuestionMark/PS/master/Install.ps1") | iex
+(New-Object System.Net.WebClient).DownloadString("http://raw.github.com/ChrisQuestionMark/PS/master/Install.ps1") | Invoke-Expression
