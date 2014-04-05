@@ -1,8 +1,8 @@
 Write-Host -foreground Green "Installing Chris' Scripts..."
-$myURL = 'http://github.com/ChrisQuestionMark/PS/tree/master/Modules'
+$modulesURL = 'http://github.com/ChrisQuestionMark/PS/tree/master/Modules'
 [regex]$regModules = 'href=\".*\/\w*\.psm1\"'
 $wc = New-Object System.Net.WebClient
-$myPage = $wc.DownloadString($myURL)
+$myPage = $wc.DownloadString($modulesURL)
 $matches = $regModules.Matches($myPage).Value
 if ($matches -and $matches -like '*"*"*' )
 {
