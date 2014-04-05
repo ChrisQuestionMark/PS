@@ -1,0 +1,1 @@
+Write-Host -foreground Green "Installing Chris' Scripts..."
