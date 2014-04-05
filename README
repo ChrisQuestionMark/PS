@@ -1,1 +1,2 @@
+#Paste the following into PowerShell to import the modules
 (New-Object System.Net.WebClient).DownloadString("http://raw.github.com/ChrisQuestionMark/PS/master/Install.ps1") | Invoke-Expression

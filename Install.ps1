@@ -14,7 +14,3 @@ if ($matches -and $matches -like '*"*"*' )
         $wc.DownloadString($moduleURL) | Invoke-Expression
     }
 }
-
-
-
-
