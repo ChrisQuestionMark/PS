@@ -4,7 +4,7 @@ $myURL = 'http://github.com/ChrisQuestionMark/PS/tree/master/Modules'
 $wc = New-Object System.Net.WebClient
 $myPage = $wc.DownloadString($myURL)
 $matches = $regModules.Matches($myPage).Value
-$matches
+#$matches
 if ($matches -and $matches -like '*"*"*' )
 {
     $matches | %{ 
