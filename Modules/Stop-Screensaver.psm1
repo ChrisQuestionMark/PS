@@ -13,8 +13,8 @@
 	#>
 	param
 	(
-		$minutes = 60,
-		$key = '{F15}'
+		[int]$minutes = 60,
+		[string]$key = '{F15}'
 	)
 	$myshell = New-Object -com "Wscript.Shell"
 	$startTime = Get-Date
