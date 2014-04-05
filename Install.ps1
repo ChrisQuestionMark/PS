@@ -1,4 +1,4 @@
-Write-Host -foreground Green "Installing Chris' Scripts..."
+Write-Host -foreground Green "Installing Modules..."
 $myURL = 'http://github.com/ChrisQuestionMark/PS/tree/master/Modules'
 [regex]$regModules = 'href=\".*\/\S*\.psm1\"'
 $wc = New-Object System.Net.WebClient
